@@ -1,0 +1,28 @@
+# Day 0 – Python Refresh
+
+Today marked the beginning of my DSA journey using Python. Instead of jumping straight into data structures and algorithms, I spent time refreshing the Python fundamentals I had learned before.
+
+## Topics Reviewed
+
+* Lists vs Tuples
+* Sets and Dictionaries
+* `==` vs `is`
+* `for` loops with `range()`
+* `if`, `elif`, `else`
+* Functions and `return`
+* Finding the largest element in a list
+* Counting character frequency (concept)
+* Even/Odd number logic using the modulo operator
+
+## What I Learned
+
+* Lists are mutable, while tuples are immutable.
+* Sets store unique values and automatically remove duplicates.
+* `==` compares values, while `is` checks whether two variables refer to the same object.
+* Python `for` loops use `range()` instead of C-style loops.
+* Functions should return values when the result needs to be used later.
+* My problem-solving skills are better than my Python syntax, so my focus will be on rebuilding Python fluency through consistent practice.
+
+## Goal
+
+Build a strong Python foundation before moving into Data Structures and Algorithms, solving a few problems every day and understanding every solution instead of memorizing it.
