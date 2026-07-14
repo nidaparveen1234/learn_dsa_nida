@@ -1,0 +1,26 @@
+Day 1 - Python Essentials & Time Complexity (Theory)
+
+Topics Covered
+
+- Lists (Mutable)
+- Strings (Immutable)
+- Sets
+- Dictionaries
+- Introduction to Time Complexity
+
+Key Learnings
+
+- Lists are mutable, meaning elements can be added, removed, or updated after creation.
+- Strings are immutable; once created, they cannot be modified directly.
+- Sets automatically remove duplicate values.
+- Dictionaries store information using key-value pairs.
+- O(1) represents constant time and is generally faster than O(n), which grows linearly with the input size.
+
+Progress
+
+- ✅ Theory completed
+- ⏳ Coding exercises will be completed in the next study session.
+
+Reflection
+
+Today's focus was on understanding the core concepts instead of rushing through coding problems. Building a strong foundation will make learning DSA much easier in the coming days.
