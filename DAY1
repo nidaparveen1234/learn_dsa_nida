@@ -1,26 +1,68 @@
-Day 1 - Python Essentials & Time Complexity (Theory)
+# Day 1 – Getting Back to Python
 
-Topics Covered
+Today I started my DSA journey with Python. Before jumping into DSA, I wanted to refresh the Python basics that I'll be using throughout the journey.
 
-- Lists (Mutable)
-- Strings (Immutable)
-- Sets
-- Dictionaries
-- Introduction to Time Complexity
+## What I revised
 
-Key Learnings
+* Lists
+* Strings
+* Dictionaries
+* Sets
+* Basic Time Complexity (Big O)
 
-- Lists are mutable, meaning elements can be added, removed, or updated after creation.
-- Strings are immutable; once created, they cannot be modified directly.
-- Sets automatically remove duplicate values.
-- Dictionaries store information using key-value pairs.
-- O(1) represents constant time and is generally faster than O(n), which grows linearly with the input size.
+## Practice
 
-Progress
+### Lists
 
-- ✅ Theory completed
-- ⏳ Coding exercises will be completed in the next study session.
+```python
+num = [1, 2, 3, 4, 5, 32, 45, 322]
 
-Reflection
+print(num[0])
+print(num[-1])
+print(len(num))
+```
 
-Today's focus was on understanding the core concepts instead of rushing through coding problems. Building a strong foundation will make learning DSA much easier in the coming days.
+### Strings
+
+```python
+text = "datastructure"
+
+print(len(text))
+print(text[0])
+print(text[-1])
+```
+
+### Dictionary
+
+```python
+student = {
+    "name": "Nida",
+    "branch": "CSE",
+    "year": 3
+}
+
+print(student["name"])
+print(student["branch"])
+print(student["year"])
+```
+
+### Set
+
+```python
+num = [2, 4, 2, 6, 4, 8, 8, 10]
+
+print(set(num))
+```
+
+## A few things I understood today
+
+* Lists can be changed, but strings can't.
+* Dictionaries make it easy to store related information using keys.
+* Sets automatically remove duplicate values.
+* A single loop that goes through every element has a time complexity of **O(n)**.
+
+## My Thoughts
+
+Today's session reminded me that I haven't forgotten as much Python as I thought. I mixed up a few things at first, but once I started coding, everything slowly came back. My goal isn't to rush through DSA—it's to understand each concept and become better at problem-solving, one day at a time.
+
+**See you on Day 2! 🚀**
