@@ -1,0 +1,79 @@
+# Day 2 – Arrays
+
+Today I started learning about arrays, which are one of the most important topics in DSA. Since Python uses lists as arrays, I practiced basic operations like accessing, updating, inserting, and removing elements. I also learned which operations are fast and which become slower because of shifting elements.
+
+## What I Practiced
+
+### Accessing Elements
+
+```python
+num = [5, 10, 15, 20, 25]
+
+print(num[0])
+print(num[2])
+print(num[-1])
+```
+
+### Updating an Element
+
+```python
+num = [5, 10, 15, 20, 25]
+
+num.pop(1)
+num.insert(1, 100)
+
+print(num)
+```
+
+> 💡 Later I learned that this can also be done more efficiently with:
+>
+> ```python
+> num[1] = 100
+> ```
+
+### Appending an Element
+
+```python
+num = [5, 10, 15, 20, 25]
+
+num.append(30)
+
+print(num)
+```
+
+### Removing the Last Element
+
+```python
+num = [5, 10, 15, 20, 25]
+
+num.pop()
+
+print(num)
+```
+
+### Challenge – Find the Largest Element
+
+```python
+arr = [18, 4, 72, 31, 9, 55]
+max=arr[0]
+for i in range(len(arr)-1):
+    if max<=arr[i]:
+        max=arr[i]
+print(max)
+```
+"i spend sme time on this because i have initialized max inside for loop but when i just think it through . i found it
+but i understand one thing the error is right there i am just not looking"
+
+## What I Learned
+
+* Accessing an element using its index is **O(1)**.
+* Traversing an entire array is **O(n)**.
+* Appending an element is usually **O(1)**.
+* Inserting at the beginning takes **O(n)** because the remaining elements have to shift.
+* There is often more than one way to solve a problem, and it's worth thinking about which approach is more efficient.
+
+## My Thoughts
+
+Today's lesson made me realize that DSA isn't just about writing code that works—it's also about understanding how efficient the solution is. I also noticed that my Python syntax is becoming more natural as I practice every day. Small steps, but I can already feel myself getting more comfortable.
+
+**Next:** Day 3 – Linear Search 🚀
