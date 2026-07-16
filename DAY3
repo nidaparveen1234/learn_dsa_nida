@@ -1,0 +1,34 @@
+# Day 3 – Linear Search
+
+Today I learned the basics of Linear Search. The idea is simple: start from the first element and compare each value until the target is found or the array ends.
+
+## What I Learned
+
+* Linear Search checks elements one by one.
+* Best case time complexity is **O(1)** when the target is the first element.
+* Worst case time complexity is **O(n)** when the target is at the end or doesn't exist.
+* It's important to check every element before deciding that a value isn't present.
+
+## Practice
+
+```python
+arr = [3, 8, 15, 20, 25]
+target = 15
+
+found = False
+
+for i in range(len(arr)):
+    if arr[i] == target:
+        found = True
+        print("Found")
+        break
+
+if not found:
+    print("Not Found")
+```
+
+## My Thoughts
+
+I was a bit tired today, so I couldn't finish all the practice questions. I still wanted to keep my streak going, so I solved one question and found a mistake in another attempt. The bug helped me understand why the `"Not Found"` check should happen after the loop instead of inside it.
+
+Tomorrow I'll continue with the remaining questions and revisit today's topic before moving on.
