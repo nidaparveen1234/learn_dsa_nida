@@ -1,28 +1,87 @@
-# Day 0 – Python Refresh
+Day 0 – Python Refresh
 
-Today marked the beginning of my DSA journey using Python. Instead of jumping straight into data structures and algorithms, I spent time refreshing the Python fundamentals I had learned before.
+Today was Day 0 of my DSA journey. Since it's been some time since I last used Python, I decided to refresh the basics before starting DSA.
 
-## Topics Reviewed
+Practice
 
-* Lists vs Tuples
-* Sets and Dictionaries
-* `==` vs `is`
-* `for` loops with `range()`
-* `if`, `elif`, `else`
-* Functions and `return`
-* Finding the largest element in a list
-* Counting character frequency (concept)
-* Even/Odd number logic using the modulo operator
+Q1. What's the difference between a list and a tuple?
 
-## What I Learned
+My Answer:
 
-* Lists are mutable, while tuples are immutable.
-* Sets store unique values and automatically remove duplicates.
-* `==` compares values, while `is` checks whether two variables refer to the same object.
-* Python `for` loops use `range()` instead of C-style loops.
-* Functions should return values when the result needs to be used later.
-* My problem-solving skills are better than my Python syntax, so my focus will be on rebuilding Python fluency through consistent practice.
+List means that it can consist of things like 1, 2, 3 and they shouldn't repeat, while the tuple is different. Once it's made, it cannot be changed.
 
-## Goal
+Q2. When do we use a set instead of a list?
 
-Build a strong Python foundation before moving into Data Structures and Algorithms, solving a few problems every day and understanding every solution instead of memorizing it.
+My Answer:
+
+Set is probably used when we have numbers that repeat.
+
+Q3. What's the difference between `==` and `is`?
+
+My Answer:
+
+`==` is used for comparison. I didn't remember much about `is`.
+
+Q4. What does this print?
+
+```python
+a = [1, 2, 3]
+b = a
+b.append(4)
+
+print(a)
+```
+
+I didn't know the answer during practice.
+
+Q5. How do you create an empty dictionary?
+
+I forgot this one too.
+
+Coding Practice
+
+Q1---------------------------------
+
+```python
+for i in range(1, 21):
+    print(i)
+```
+
+Q2-------------------------------
+
+```python
+for i in range(1, 21):
+    if i % 2 == 1:
+        continue
+    print(i)
+```
+
+Q3----------------------------
+
+My idea was to compare each element one by one until I found the largest number. I remembered the logic but forgot the Python syntax.
+
+Q4-----------------------------------
+I remembered that a dictionary was needed to count the characters, but I forgot how to write it.
+
+Q5---------------------------------
+
+```python
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+```
+
+What I revised after the lesson
+
+* `for` loop using `range()`
+* `if`, `elif`, and `else`
+* Functions with one parameter
+* Empty list `[]`
+* Empty tuple `()`
+* Empty dictionary `{}`
+* Empty set `set()`
+* Printing odd numbers using `range()`
+
+Today reminded me that I still remember the logic behind many problems, but I need to refresh my Python syntax. That's exactly why I'm starting with Day 0 before jumping into DSA.
