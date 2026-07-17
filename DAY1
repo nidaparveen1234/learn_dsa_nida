@@ -1,68 +1,89 @@
-# Day 1 – Getting Back to Python
+Day 1 – Python Essentials & Time Complexity
 
-Today I started my DSA journey with Python. Before jumping into DSA, I wanted to refresh the Python basics that I'll be using throughout the journey.
+Today I started my DSA journey with Python. Before starting DSA, I revised some Python basics that I'll be using throughout the journey. I also learned about Time Complexity and the basics of Big O notation.
 
-## What I revised
+Practice
 
-* Lists
-* Strings
-* Dictionaries
-* Sets
-* Basic Time Complexity (Big O)
-
-## Practice
-
-### Lists
+Q1----------------------------------------------------------------
 
 ```python
-num = [1, 2, 3, 4, 5, 32, 45, 322]
+num = [1,2,3,4,5,32,45,322]
 
 print(num[0])
+
 print(num[-1])
+
 print(len(num))
 ```
 
-### Strings
+Output:
+
+1
+
+322
+
+8
+
+Q2-------------------------------------------------------
 
 ```python
 text = "datastructure"
 
 print(len(text))
+
 print(text[0])
+
 print(text[-1])
 ```
 
-### Dictionary
+Output:
+
+13
+
+d
+
+e
+
+Q3---------------------------------------------------
 
 ```python
-student = {
-    "name": "Nida",
+dict = {
+    "name": "nida",
     "branch": "CSE",
     "year": 3
 }
 
-print(student["name"])
-print(student["branch"])
-print(student["year"])
+print(dict["name"])
+
+print(dict["branch"])
+
+print(dict["year"])
 ```
 
-### Set
+Output:
+
+nida
+
+CSE
+
+3
+
+Q4-------------------------------------------------
 
 ```python
-num = [2, 4, 2, 6, 4, 8, 8, 10]
+num = [2,4,2,6,4,8,8,10]
 
-print(set(num))
+num = set(num)
+
+print(num)
 ```
 
-## A few things I understood today
+Output:
 
-* Lists can be changed, but strings can't.
-* Dictionaries make it easy to store related information using keys.
-* Sets automatically remove duplicate values.
-* A single loop that goes through every element has a time complexity of **O(n)**.
+{2, 4, 6, 8, 10}
 
-## My Thoughts
+Q5---------------------------------------------------------------------
 
-Today's session reminded me that I haven't forgotten as much Python as I thought. I mixed up a few things at first, but once I started coding, everything slowly came back. My goal isn't to rush through DSA—it's to understand each concept and become better at problem-solving, one day at a time.
+A single loop that goes through every element has a time complexity of **O(n)**.
 
-**See you on Day 2! 🚀**
+Today I revised Python basics like lists, strings, dictionaries, and sets. I also learned what Time Complexity is and the difference between O(1), O(n), and O(n²). It was a good refresher before starting DSA.
