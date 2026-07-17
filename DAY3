@@ -1,34 +1,114 @@
-# Day 3 – Linear Search
+Day 3 – Linear Search
 
-Today I learned the basics of Linear Search. The idea is simple: start from the first element and compare each value until the target is found or the array ends.
+Today I learned about Linear Search.
 
-## What I Learned
+At first, I wasn't feeling well, so I only solved the first question. Later I felt better, so I came back and finished the remaining questions. I'm happy that I didn't leave it for another day.
 
-* Linear Search checks elements one by one.
-* Best case time complexity is **O(1)** when the target is the first element.
-* Worst case time complexity is **O(n)** when the target is at the end or doesn't exist.
-* It's important to check every element before deciding that a value isn't present.
+Today I learned:
 
-## Practice
+* What Linear Search is.
+* Best case is O(1).
+* Worst case is O(n).
+* How to return the index if an element is found.
 
+Practice
+Q1
 ```python
 arr = [3, 8, 15, 20, 25]
 target = 15
 
 found = False
 
-for i in range(len(arr)):
+for i in range(len(arr)-1):
     if arr[i] == target:
         found = True
-        print("Found")
+        print("found")
         break
 
 if not found:
-    print("Not Found")
+    print("not found")
+```
+Output:
+found
+
+Q2
+
+```python
+arr = [10, 20, 30, 40, 50]
+
+target = 50
+
+for i in range(len(arr)):
+    if arr[i] == target:
+        print(i)
+        break
 ```
 
-## My Thoughts
+Output:
+4
 
-I was a bit tired today, so I couldn't finish all the practice questions. I still wanted to keep my streak going, so I solved one question and found a mistake in another attempt. The bug helped me understand why the `"Not Found"` check should happen after the loop instead of inside it.
+Q3
 
-Tomorrow I'll continue with the remaining questions and revisit today's topic before moving on.
+```python
+arr = [5, 2, 5, 7, 5, 9]
+
+target = 5
+
+count = 0
+
+for i in range(len(arr)):
+    if arr[i] == target:
+        count = count + 1
+
+print(count)
+```
+
+Output:
+3
+
+Q4
+
+```python
+arr = [18, 4, 72, 31, 0, 55]
+
+min = arr[0]
+
+for i in range(len(arr)):
+    if arr[i] <= min:
+        min = arr[i]
+
+print("minimum is", min)
+```
+
+Output:
+minimum is 0
+
+Q5
+
+Best case: first element → O(1)
+
+Worst case: last element or not present → O(n)
+
+Challenge
+
+```python
+def linear_search(arr, target):
+    found = False
+    for i in range(len(arr)):
+        if arr[i] == target:
+            found = True
+            break
+
+    if found == True:
+        return i
+    else:
+        return -1
+
+arr = [2, 4, 6, 8, 12]
+target = 8
+
+print(linear_search(arr, target))
+```
+
+Output:
+3
