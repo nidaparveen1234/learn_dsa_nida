@@ -1,0 +1,93 @@
+Day 5 – Recursion
+
+Today I started learning Recursion.
+
+To be honest, I was very confused at first. It felt different from the topics I learned before. Instead of trying to understand everything at once, I decided to first understand the pattern of recursion.
+
+I learned that recursion is a function that calls itself. I also learned that every recursive function needs a base case. Without a base case, the function will keep calling itself forever.
+
+I'll continue the remaining questions tomorrow after I understand today's concept better.
+
+Practice
+
+Q1--------------------------------------------
+
+```python
+def print_upto_10(n):
+    if n > 10:
+        return
+
+    print(n)
+    print_upto_10(n+1)
+
+print_upto_10(1)
+```
+
+Output:
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+Q2----------------------------------------------
+
+```python
+def print_num(n):
+    if n == 0:
+        return
+
+    print(n)
+    print_num(n-1)
+
+print_num(10)
+```
+
+Output:
+
+10
+
+9
+
+8
+
+7
+
+6
+
+5
+
+4
+
+3
+
+2
+
+1
+
+Q4-----------------------------------------------------------
+
+1. Recursion is a function that calls itself.
+
+2. A base case is needed to stop the recursion.
+
+3. If there is no base case, the function keeps calling itself forever.
+
+Today's Thoughts
+
+Today I was more confused than the previous days, but I think that's okay because recursion is a completely new way of thinking. I don't want to rush this topic, so I'll finish the remaining questions tomorrow after I understand today's pattern better.
