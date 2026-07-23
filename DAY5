@@ -1,24 +1,26 @@
 Day 5 – Recursion
 
-Today I started learning Recursion.
+Today I continued learning Recursion.
 
-To be honest, I was very confused at first. It felt different from the topics I learned before. Instead of trying to understand everything at once, I decided to first understand the pattern of recursion.
+To be honest, recursion was confusing for me. I understood the idea that a function calls itself, but I was trying to solve the questions using `while` loops because that's what came to my mind first.
 
-I learned that recursion is a function that calls itself. I also learned that every recursive function needs a base case. Without a base case, the function will keep calling itself forever.
+The even numbers question took me around 10 minutes. The funny part is that the solution was right in front of me. I was thinking too much and trying to make it more complicated than it actually was. After going back to the same recursion pattern, I finally got it.
 
-I'll continue the remaining questions tomorrow after I understand today's concept better.
+I also learned that I don't need a `while` loop for these questions. The recursive call itself keeps repeating the function until the base case is reached.
 
 Practice
 
-Q1--------------------------------------------
+Q1----------------------------------------------------------
 
 ```python
 def print_upto_10(n):
+
     if n > 10:
         return
 
     print(n)
-    print_upto_10(n+1)
+
+    print_upto_10(n + 1)
 
 print_upto_10(1)
 ```
@@ -45,15 +47,17 @@ Output:
 
 10
 
-Q2----------------------------------------------
+Q2------------------------------------------------------
 
 ```python
 def print_num(n):
+
     if n == 0:
         return
 
     print(n)
-    print_num(n-1)
+
+    print_num(n - 1)
 
 print_num(10)
 ```
@@ -80,14 +84,73 @@ Output:
 
 1
 
-Q4-----------------------------------------------------------
+Q3---------------------------------------------------
+
+```python
+def print_num(n):
+
+    if n > 20:
+        return
+
+    if n % 2 == 0:
+        print(n)
+
+    print_num(n + 1)
+
+print_num(1)
+```
+
+Output:
+
+2
+
+4
+
+6
+
+8
+
+10
+
+12
+
+14
+
+16
+
+18
+
+20
+
+Q4-----------------------------------------------------
 
 1. Recursion is a function that calls itself.
 
 2. A base case is needed to stop the recursion.
 
-3. If there is no base case, the function keeps calling itself forever.
+3. If there is no base case, it keeps calling itself forever.
 
+Challenge-----------------------------------------------------
+
+```python
+def sum_num(n):
+
+    sum = 0
+
+    for i in range(1, n + 1):
+        sum += i
+
+    print(sum)
+
+sum_num(20)
+```
+
+Output:
+
+210
+--------------------------------------------
 Today's Thoughts
 
-Today I was more confused than the previous days, but I think that's okay because recursion is a completely new way of thinking. I don't want to rush this topic, so I'll finish the remaining questions tomorrow after I understand today's pattern better.
+Today was much better than yesterday. I was confused because I kept trying to use a `while` loop. The even numbers question took me around 10 minutes, but once I stopped overthinking and followed the same recursion pattern, it worked. I think my problem wasn't the question itself—I was making it more complicated than it needed to be.
+
+The challenge is not recursive yet because I used a `for` loop. I'll learn how to solve it using recursion later.
