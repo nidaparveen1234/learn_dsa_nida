@@ -1,0 +1,119 @@
+Day 6 – Strings
+
+Today I learned about strings.
+
+Compared to recursion, today's topic felt much easier because I have already used strings before. It was mostly a revision and helped me remember the basic operations.
+
+Practice
+
+Q1--------------------------------------------------------
+
+```python
+text = "datastructure"
+
+print(text[0])
+
+print(text[-1])
+
+print(len(text))
+```
+
+Output:
+
+d
+
+e
+
+13
+
+Q2---------------------------------------------------
+
+```python
+text = "computer"
+
+for i in text:
+
+    print(i)
+```
+
+Output:
+
+c
+
+o
+
+m
+
+p
+
+u
+
+t
+
+e
+
+r
+
+Q3----------------------------------------------------
+
+```python
+text = "Python Programming"
+
+print(text.upper())
+
+print(text.lower())
+```
+
+Output:
+
+PYTHON PROGRAMMING
+
+python programming
+
+Q4---------------------------------------------------
+
+```python
+text = "algorithm"
+
+print("g" in text)
+
+print("z" in text)
+```
+
+Output:
+
+True
+
+False
+
+Q5-------------------------------------------------------
+
+1. Accessing one character – O(1)
+
+2. Traversing the whole string – O(n)
+
+3. Finding the length using len() – O(1)
+
+Challenge--------------------------------------------
+
+```python
+text = "education"
+
+count_vowel = 0
+
+for i in text:
+
+    if i == "a" or "e" or "i" or "o" or "u":
+
+        count_vowel = count_vowel + 1
+
+print(count_vowel)
+```
+
+Output:
+
+5
+-----------------------------------------------------------
+Today's Thoughts
+
+Today's topic was easier than recursion. It felt more like revising the basics of strings. I also came back to the vowel counting question that confused me before. I got the output I wanted, but I still want to understand why the condition works the way it does, so I'll look into that more.
