@@ -1,0 +1,160 @@
+Day 7 – Dictionaries
+
+Today I learned about dictionaries.
+
+I already knew the basics before, but today I understood them better by solving problems. The challenge was the most interesting part. I remembered the idea from before but couldn't remember the code. After thinking about it and debugging it, I finally got it working. The biggest thing I learned today was the difference between using `==` and `in` while checking a dictionary.
+
+Practice
+
+Q1-------------------------------------------------------
+
+```python
+student = {
+
+    "name": "Ali",
+
+    "age": 20,
+
+    "branch": "CSE"
+
+}
+
+print(student["name"])
+
+print(student["age"])
+```
+
+Output:
+
+Ali
+
+20
+
+Q2---------------------------------------------------
+
+```python
+student = {
+
+    "name": "Ali"
+
+}
+
+student["branch"] = "CSE"
+
+student["year"] = 3
+
+for key in student:
+
+    print(key, student[key])
+```
+
+Output:
+
+name Ali
+
+branch CSE
+
+year 3
+
+Q3--------------------------------------------
+
+```python
+student = {
+
+    "name": "Ali",
+
+    "year": 2
+
+}
+
+student["year"] = 3
+
+for i in student:
+
+    print(i, student[i])
+```
+
+Output:
+
+name Ali
+
+year 3
+
+Q4---------------------------------------------------------
+
+```python
+student = {
+
+    "name": "Ali",
+
+    "branch": "CSE",
+
+    "year": 3
+
+}
+
+for i in student:
+
+    print(i, ":", student[i])
+```
+
+Output:
+
+name : Ali
+
+branch : CSE
+
+year : 3
+
+Q5--------------------------------------------------------------------------
+
+```python
+student = {
+
+    "name": "Ali",
+
+    "branch": "CSE"
+
+}
+
+print("name" in student)
+
+print("age" in student)
+```
+
+Output:
+
+True
+
+False
+
+Challenge--------------------------------------------------
+
+```python
+text = "banana"
+store_value = {}
+
+for i in text:
+    if i in store_value:  # we used this because it get checked but == is just checking if i == entire array
+        store_value[i] += 1
+    elif i != store_value:  # it checks if the i is not equal to whole array addd
+        store_value[i] = 0
+        store_value[i] += 1
+
+print(store_value)
+
+# My understanding:
+# When a new letter comes, first it checks:
+# `if i in store_value`
+# If the letter is already present in the dictionary, it increases its value by 1.
+# If it is not present, only then it goes to the `else` part, creates the new letter with value 0, and then increases it to 1.
+# So `else` only runs the first time a letter appears. After that, whenever the same letter comes again, the `if` condition becomes true, so it never goes to the `else` part. It just keeps increasing the count.
+```
+
+Output:
+
+{'b': 1, 'a': 3, 'n': 2}
+-------------------------------------------------------------
+Today's Thoughts
+
+Today's challenge was my favorite part. I remembered the algorithm but not the code, so I tried to build it on my own. At first I used `==` instead of `in`, and after debugging it I finally understood why `in` checks whether the key exists in the dictionary while `==` compares with the whole dictionary. It felt really satisfying because it was my own idea and I figured out the mistake myself.
