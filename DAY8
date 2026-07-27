@@ -1,0 +1,116 @@
+Day 8 – Python Deep Dive 1
+
+Today was a Python Deep Dive day instead of DSA.
+
+I learned some Python concepts that will help me while solving DSA problems and while building projects.
+
+Topics Covered
+
+* Mutable vs Immutable
+* `print()` vs `return`
+* Default Parameters
+* `enumerate()`
+
+Practice
+
+Q1-------------------------------------------------
+
+```python
+num = [10, 20, 30]
+
+num[1] = 100
+
+print(num)
+```
+
+Output:
+
+[10, 100, 30]
+
+Q2---------------------------------------------------
+
+```python
+text = "python"
+
+text[0] = "p"
+
+print(text)
+```
+
+Output:
+
+TypeError
+
+Q3-------------------------------------------------
+
+```python
+def multiply(a, b):
+
+    return a * b
+
+result = multiply(4,5)
+
+print(result)
+```
+
+Output:
+
+20
+
+Q4-----------------------------------------------
+
+```python
+def greet(name="Student"):
+
+    print("Hello", name)
+
+greet()
+
+greet("Ali")
+```
+
+Output:
+
+Hello Student
+
+Hello Ali
+
+Q5------------------------------------------------------
+
+```python
+fruit = ["apple", "banana", "orange"]
+
+for index, value in enumerate(fruit):
+
+    print(index, value)
+```
+
+Output:
+
+0 apple
+
+1 banana
+
+2 orange
+
+Challenge-------------------------------------------------
+
+```python
+arr = [5, 10, 15, 20, 25, 30]
+
+count = 0
+
+for i in arr:
+
+    count += 1
+
+print(count)
+```
+
+Output:
+
+6
+
+Today's Thoughts
+
+Today's Python Deep Dive was easier because it was more about understanding Python itself than solving DSA problems. I learned the difference between mutable and immutable objects, understood `return` a little better, and learned how `enumerate()` works. These are small concepts, but I think they'll help me write cleaner Python code in both DSA and projects.
