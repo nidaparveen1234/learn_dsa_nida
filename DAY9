@@ -1,0 +1,84 @@
+Day 9 – Bubble Sort (Understanding the Algorithm)
+
+Today I started learning Bubble Sort.
+
+Instead of writing the code immediately, I first focused on understanding how the algorithm works. I traced each comparison and swap by hand. This made it much easier to understand why the largest element moves to the end after every pass.
+
+What I Learned
+
+* Bubble Sort compares only neighboring elements.
+* If the left element is greater than the right element, they are swapped.
+* After every pass, the largest unsorted element reaches its correct position at the end.
+* If an array is already sorted, we can stop early by checking whether any swap happened during a pass.
+
+Practice
+
+Q1------------------------------------------
+
+Array:
+
+```text
+[4, 2, 7, 1]
+```
+
+After the first pass:
+
+```text
+[2, 4, 1, 7]
+```
+
+Q2---------------------------------------------
+
+Array:
+
+```text
+[9, 3, 6]
+```
+
+After the first pass:
+
+```text
+[3, 6, 9]
+```
+
+Q3---------------------------------------------------
+
+Why do we compare neighboring elements?
+
+When we compare neighboring elements, we swap them if needed. After every pass, the biggest element gets pushed to the last position.
+
+Q4-------------------------------------------------
+
+If an array has 5 elements, the first pass makes:
+
+4 comparisons
+
+Challenge-----------------------------------------------------
+
+Array:
+
+```text
+[6, 3, 8, 2, 5]
+```
+
+After Pass 1:
+
+```text
+[3, 6, 2, 5, 8]
+```
+
+After Pass 2:
+
+```text
+[3, 2, 5, 6, 8]
+```
+
+After Pass 3:
+
+```text
+[2, 3, 5, 6, 8]
+```
+
+Today's Thoughts
+
+Today was mostly about understanding the logic instead of coding. Tracing every comparison on paper helped me see how Bubble Sort works step by step. I also realized that if no swaps happen during a pass, the array is already sorted, so we can stop early instead of continuing all the remaining passes.
