@@ -1,0 +1,75 @@
+Day 10 – Bubble Sort (Started Coding)
+
+Today I started writing the Bubble Sort code.
+
+Before writing the complete algorithm, I tried to understand why Bubble Sort needs two loops. One loop is for one complete pass, and another loop is used to repeat the passes until the array becomes sorted.
+
+I also understood why we use `range(len(arr)-1)` while comparing neighboring elements. Since we compare `arr[j]` with `arr[j+1]`, we cannot go to the last index because `j+1` would go outside the array.
+
+Practice
+
+Q1---------------------------------------------------+
+
+Array:
+
+```python
+arr = [5, 2, 8, 1]
+```
+
+After the first pass:
+
+```text
+[2, 5, 1, 8]
+```
+
+Q2--------------------------------------------------------
+
+One `for` loop does one complete pass.
+
+Another `for` loop is needed to repeat the passes until the array is sorted.
+
+Q3-------------------------------------------------------
+
+Array:
+
+```python
+arr = [7, 3, 9, 2]
+```
+
+After the first pass:
+
+```text
+[3, 7, 2, 9]
+```
+
+Q4--------------------------------------------------------
+
+Why do we use `range(len(arr)-1)`?
+
+Because we compare `arr[j]` with `arr[j+1]`. If we go until the last index, `j+1` will be outside the array.
+
+Q5--------------------------------------------------------------
+
+If an array has 6 elements, the worst case needs:
+
+5 passes
+
+My Code-----------------------------------------------
+
+```python
+arr = [3,2,1,0]
+n = len(arr) - 1
+
+for i in range(len(arr)):
+    for j in range(n):
+        if arr[i] > arr[j+1]:
+            temp = arr[i]
+            arr[i] = arr[j+1]
+            arr[j+1] = arr[i]
+
+print(arr)
+```
+
+Today's Thoughts
+
+Today I started writing the Bubble Sort code on my own. I didn't finish it today because I wanted to think through the logic myself instead of rushing. Tomorrow I'll continue from here and try to complete the algorithm.
