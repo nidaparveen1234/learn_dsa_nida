@@ -1,0 +1,57 @@
+Day 11 – Bubble Sort
+
+Today I continued working on Bubble Sort.
+
+Today was actually a really satisfying day because I figured out an important part of the algorithm on my own. I was trying to understand how the inner loop should decrease after every pass.
+
+I noticed that:
+
+First pass → 3 comparisons
+Second pass → 2 comparisons
+Third pass → 1 comparison
+
+From that pattern, I came up with:
+
+`n - i`
+
+and used it for the inner loop:
+
+`range(n - i)`
+
+I didn't just copy this from somewhere. I tried different things in my workbook and figured out the pattern myself, and it worked. That made me really happy because I feel like I'm starting to think about the algorithm instead of just remembering the code.
+
+I also understood that:
+
+* The outer loop is used for the passes.
+* The inner loop is used to compare neighboring elements.
+* `j` is used to move through the neighboring elements.
+* After every pass, the largest unsorted element goes to the end.
+* The number of comparisons decreases after every pass.
+
+My Code
+
+```python
+arr = [3,2,1,0]
+n= len(arr)-1
+
+for i in range(len(arr)-1):
+    for j in range(n-i):
+        if arr[j]>arr[j+1]:
+            temp=arr[i]
+            arr[j]=arr[j+1]
+            arr[j+1] = temp
+
+print(arr)
+```
+
+Time Complexity
+
+O(n²)
+
+I understood that Bubble Sort has an outer loop and an inner loop, so the work grows roughly like n × n.
+
+Today's Thoughts
+
+Today felt different from the previous days. I was able to figure out the `n - i` pattern myself by looking at how many comparisons were needed in each pass. I feel like I actually created the logic instead of just remembering it.
+
+This is probably the part I enjoy most about DSA — when something finally clicks after struggling with it for a while.
